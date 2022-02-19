@@ -6,17 +6,19 @@
 #    By: ppetchda <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/19 21:56:34 by ppetchda          #+#    #+#              #
-#    Updated: 2022/02/19 22:00:05 by ppetchda         ###   ########.fr        #
+#    Updated: 2022/02/19 22:13:01 by ppetchda         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-SRCS = isdigit.c
+SRCS = ft_isdigit.c
 
-
+OBJS = $(SRCS:.c=.o)
 
 NAME = libft.a
-CC = -Wall -Wextra -Werror
+
+CC = gcc
+CC_FLAGS = -Wall -Wextra -Werror
 
 
 %.o: %.c
