@@ -6,7 +6,7 @@
 #    By: ppetchda <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/19 21:56:34 by ppetchda          #+#    #+#              #
-#    Updated: 2022/02/19 22:13:01 by ppetchda         ###   ########.fr        #
+#    Updated: 2022/02/19 22:20:45 by ppetchda         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,14 +27,13 @@ CC_FLAGS = -Wall -Wextra -Werror
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
-
 norm:
 	norminette *.c
 
 all: $(NAME)
 
 clean:
-	rm -f *.c
+	rm -f *.o
 
 fclean: clean
 	rm -f $(NAME)
