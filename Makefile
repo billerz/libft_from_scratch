@@ -10,7 +10,6 @@
 #                                                                              #
 # **************************************************************************** #
 
-
 SRCS = ft_isdigit.c
 
 OBJS = $(SRCS:.c=.o)
@@ -19,7 +18,6 @@ NAME = libft.a
 
 CC = gcc
 CC_FLAGS = -Wall -Wextra -Werror
-
 
 %.o: %.c
 	${CC} ${CC_FLAGS} -c $< -o $@
@@ -40,6 +38,4 @@ fclean: clean
 
 re: fclean all
 
-
-
-.PHONY: norm all
+.PHONY: norm all clean fclean re
