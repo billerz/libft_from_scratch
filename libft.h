@@ -25,5 +25,6 @@ size_t				ft_strlen(const char *s);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 void				ft_putchar_fd(char c, int fd);
+void				ft_putstr_fd(char *s, int fd);
 
 #endif
